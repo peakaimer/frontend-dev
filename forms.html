@@ -1,0 +1,92 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+        <title>HTML | FORMS INTRODUCTION</title>
+    </head>
+    <body>
+       <form>
+            <fieldset>
+                <legend>Registration form</legend>
+
+                <label for="userfirstname">First Name:</label>
+                <input type="text" id="userfirstname" name="fname" required disabled>
+
+                <label for="userlastname">Last Name:</label>
+                <input type="text" id="userlastname" name="lname" required> <br><br>
+
+                <label for="userphonenumber">Phone No:</label>
+                <input type="number" id="userphonenumber" name="PhoneNo" min="1" max="12" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="pname" required><br><br>
+
+                <label for="useremail">Email Address:</label>
+                <input type="email" id="useremail" name="user-email" disabled><br>
+                
+                <!-- Checkbox -->
+                <label>Choose your hobbies</label><br>
+                <input type="checkbox" id="Walking" name="hobbies"><label for="Walking">Walking</label><br>
+                <input type="checkbox" id="Singing" name="hobbies"><label for="Singing">Singing</label><br>
+                <input type="checkbox" id="Skipping" name="hobbies"><label for="Skipping">Skipping</label><br>
+                <input type="checkbox" id="Jumping" name="hobbies"><label for="Jumping">Jumping</label><br>
+
+                <!-- Radio -->
+                <label>Choose your profession:</label><br>
+                <input type="Radio" id="Engineer" name="Profession"><label for="Engineer">Engineer</label><br>
+                <input type="Radio" id="Teacher" name="Profession"><label for="Teacher">Teacher</label><br>
+                <input type="Radio" id="Programmer" name="Profession"><label for="Programmer">Programmer</label><br>
+                <input type="Radio" id="Lawyer" name="Profession"><label for="lawyer">Lawyer</label><br><br>
+                
+
+                <label for="">ID-card</label>
+                <input type="file" id="" name=""><br><br>
+
+                <label for="today">Date:</label>
+                <input type="date" id="today" name="date"><br><br>
+                
+                <!-- time -->
+                <label for="Time">Time</label>
+                <input type="time" id="Time" name="time">
+
+                <label for="datetime-local">Date-time</label>
+                <input type="datetime-local" id="datetime-local" name="Date-time">
+                <!-- range -->
+                <label for="range">Range</label>
+                <input type="range" id="range" name="my-range"><br><br>
+
+                <!-- color -->
+                <label for="my-color">color</label>
+                <input type="color" id="my-color" name="color">
+
+                <!-- Select -->
+                <label for="user-country">
+                    Choose your country:
+                </label>
+                <select name="Country" id="user-country">
+                    <option value="">---choose---</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Togo">Togo</option>
+                </select><br><br>
+                <!-- SEARCH -->
+                <label for="">SEARCH</label>
+                <input type="search" id="search" name="search">
+                <!-- comment -->
+                <label for="usercomment">
+                    User-comment
+                </label><br><br>
+                <textarea name="comment" id="usercomment" cols="30" rows="10" placeholder="This is a comment"></textarea><br><br>
+
+                <input type="submit" value="signin">
+                <button type="submit">
+                    Register
+                </button>
+            </fieldset>
+       </form> 
+    </body>
+
+</html>
+
+
